@@ -27,30 +27,42 @@ public class ArrayNegNumbers {
         }
 
         System.out.println("Cells with negative numbers: ");
+        int howManyNegativeCells = 0;
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[i].length; j++) {
                 if (matrix[i][j] < 0) {
                     System.out.print("(" + i + ", " + j + ");");
+                    howManyNegativeCells++;
                 }
             }
         }
         System.out.println();
+        System.out.println("How many cells with negative numbers: " + howManyNegativeCells);
+        System.out.println();
+        int howManyPositiveCells = 0;
         System.out.println("Cells with positive numbers: ");
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[i].length; j++) {
                 if (matrix[i][j] > 0) {
                     System.out.print("(" + i + ", " + j + ");");
+                    howManyPositiveCells++;
                 }
             }
         }
         System.out.println();
+        System.out.println("How many cells with positive value: " + howManyPositiveCells);
+        System.out.println();
+        int howManyZeroCells = 0;
         System.out.println("Cells with zero: ");
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[i].length; j++) {
                 if (matrix[i][j] == 0) {
                     System.out.print("(" + i + ", " + j + ");");
+                    howManyZeroCells++;
                 }
             }
         }
+        System.out.println();
+        System.out.println("How many cells with zero value: " + howManyZeroCells);
     }
 }

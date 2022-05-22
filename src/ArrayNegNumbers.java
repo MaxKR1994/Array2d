@@ -17,7 +17,7 @@ public class ArrayNegNumbers {
         int[][] matrix = new int[a][b];
         Random newRandomNumber = new Random();
 
-        System.out.println("Generated matrix: ");
+        System.out.println("Generated matrix with random numbers: ");
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[i].length; j++) {
                 matrix[i][j] = newRandomNumber.nextInt(10) + -5;
@@ -34,7 +34,7 @@ public class ArrayNegNumbers {
                 }
             }
         }
-
+        System.out.println();
         System.out.println("Cells with positive numbers: ");
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[i].length; j++) {
